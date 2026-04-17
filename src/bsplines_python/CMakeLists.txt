@@ -74,9 +74,9 @@ install(TARGETS ${PROJECT_NAME}
   LIBRARY DESTINATION local/lib/python3.10/dist-packages/bsplines
 )
 
-install(DIRECTORY include/
-  DESTINATION include
-)
+#install(DIRECTORY include/
+#  DESTINATION include
+#)
 
 ament_export_dependencies(numpy_eigen bsplines sparse_block_matrix sm_common sm_kinematics python_module Boost Python3 Eigen3)
 ament_export_include_directories(include)

@@ -84,9 +84,9 @@ install(TARGETS ${PROJECT_NAME}
   LIBRARY DESTINATION local/lib/python3.10/dist-packages/aslam_splines
 )
 
-install(DIRECTORY include/
-  DESTINATION include
-)
+#install(DIRECTORY include/
+#  DESTINATION include
+#)
 
 ament_export_dependencies(numpy_eigen aslam_splines bsplines_python bsplines sparse_block_matrix sm_common sm_kinematics aslam_backend aslam_backend_expressions aslam_backend_python sm_timing aslam_cameras aslam_time python_module Boost Python3 Eigen3)
 ament_export_include_directories(include)
